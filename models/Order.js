@@ -1,17 +1,24 @@
-const pool = require('../config/db');
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/db');
 
-module.exports = {
-  createOrder: (orderData) => {
-    return new Promise((resolve, reject) => {
-      pool.query(
-        'INSERT INTO orders SET ?',
-        orderData,
-        (error, results) => {
-          if (error) return reject(error);
-          resolve(results.insertId);
-        }
-      );
-    });
+const Order = sequelize.define('Order', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
   },
-  // Other CRUD operations...
-};
+  // Add other fields as needed, for example:
+  orderNumber: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  customerName: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  // ... other fields
+}, {
+  tableName: 'orders'
+});
+
+module.exports = Order;
