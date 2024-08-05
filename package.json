@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lennart",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.7.3",
     "bcryptjs": "^2.4.3",
