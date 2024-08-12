@@ -1,0 +1,4 @@
+Order Number,Customer Name,Phone Number,Email Address,Address Line 1,Address Line 2,City,Postal Code,Country Code,Commodities Description,Customs Value,Shipping Cost,GST Cost,Invoice Date,Invoice Number,Package Weight,Package Length,Package Width,Package Height,Customer Barcode,Commodity Code,Quantity,Description,Unit Price,Item Weight,GST Charged
+12345,John Doe,1234567890,john@example.com,123 Main St,apt 5,New York,10001,US,Toy & Figurine,10450,3176,0,2024/4/3,INV-123456,1.5,26.4,25.5,9.8,BARCODE001,9503,2,Toy plastic figurine,50,0.256,Y
+12345,,,,,,,,,,,,,,,,,,,,9504,3,Action figure,60,0.3,
+,,,,,,,,,,,,,,,,,,,,,,,,,
